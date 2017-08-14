@@ -1,0 +1,29 @@
+{
+  "name": "my-doc-mgmt",
+  "version": "1.0.0",
+  "description": "My version of a document management app server",
+  "main": "dist/index.js",
+  "repository": "https://github.com/mr-tenders/my-doc-mgmt-server",
+  "author": "T.C. Enders <tyberius.enders@gmail.com>",
+  "license": "MIT",
+  "scripts": {
+    "build": "tsc",
+    "start": "node dist/index.js",
+    "start:debug": "set DEBUG=intuitive-server:* && node %NODE_DEBUG_OPTION% dist/index.js",
+    "watch:server": "tsc --watch"
+  },
+  "dependencies": {
+    "commander": "^2.11.0",
+    "express": "^4.15.4"
+  },
+  "devDependencies": {
+    "@types/debug": "^0.0.30",
+    "@types/express": "^4.0.36",
+    "@types/helmet": "^0.0.36",
+    "debug": "^3.0.0",
+    "helmet": "^3.8.1",
+    "supports-color": "^4.2.1",
+    "tslint": "^5.6.0",
+    "typescript": "^2.4.2"
+  }
+}
