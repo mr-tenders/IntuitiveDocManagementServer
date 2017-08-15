@@ -5,6 +5,10 @@
 *.zip
 *.tar.gz
 
+# project output dirs
+dist
+build
+
 # From https://github.com/github/gitignore/blob/master/Node.gitignore
 # Logs
 logs

@@ -1,15 +1,16 @@
-import * as ex from 'express';
+import * as express from 'express';
 
-const router = ex.Router();
+const router = express.Router();
 
-function login(req: ex.Request, res: ex.Response, next: ex.NextFunction) {
+function test(req: express.Request, res: express.Response, next: express.NextFunction) {
   return res.json({
     status: 101,
-    statusText: "OK"
+    statusText: 'OK',
   });
 }
 
-router.get('/', login);
-router.post('/', login);
+router.get('/', test);
+router.post('/', test);
 
 export default router;
+export { router };

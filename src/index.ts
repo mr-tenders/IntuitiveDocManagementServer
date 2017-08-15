@@ -1,10 +1,14 @@
-import * as express from 'express';
 import * as Debug from 'debug';
+import * as express from 'express';
 import * as helmet from 'helmet';
 
 import routes from './routes';
 
-const debug = Debug('intuitive-server:a');
+ // Some hacks since lokijs is throwing tsc errors
+declare const IDBDatabase: any;
+declare const XMLHttpRequest: any;
+
+const debug = Debug('intuitive-server');
 
 const app = express();
 const PORT = process.env.APP_PORT || 3000;
